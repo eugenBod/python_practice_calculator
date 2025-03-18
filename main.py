@@ -16,14 +16,13 @@ try:
         print("Операция умножения (*)")
         result = first_number * second_number
     elif operation == "/":
-        try:
             print("Операция деления (/)")
             result = first_number / second_number
-        except ZeroDivisionError:
-            result = "Деление на ноль невозможно!!!"
     else:
         result = "Операция, которую ввел пользователь, неизвестна."
 except ValueError:
     result = "Ошибка ввода. Введите число!!!"
-    
+except ZeroDivisionError:
+    result = "Деление на ноль невозможно!!!"
+
 print(f"Ответ: {result}")
