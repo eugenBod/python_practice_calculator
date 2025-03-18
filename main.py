@@ -21,8 +21,8 @@ try:
     else:
         result = "Операция, которую ввел пользователь, неизвестна."
 except ValueError:
-    result = "Ошибка ввода. Введите число!!!"
+    print("Ошибка ввода. Введите число!!!")
 except ZeroDivisionError:
-    result = "Деление на ноль невозможно!!!"
-
-print(f"Ответ: {result}")
+    print("Деление на ноль невозможно!!!")
+else:
+    print(f"Ответ: {result}")
